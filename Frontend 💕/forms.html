@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+        <br>
+    <input type="text" placeholder="Enter Your Username">
+    <br>
+    <input type="password" placeholder="Enter Your Password">
+    <br>
+    <input type="number">
+    <br>
+    <input type="date">
+    <br>
+    <input type="color">
+    <br>
+    <input type="time">
+    <br>
+    <input type="file">
+    </form>
+    <br><br> <br> <br>
+
+    <form action="?action">
+        <lebel>
+            Enter your username :
+            <input type="text" placeholder="Username">
+        </lebel>
+    </form>
+    <br><br> <br> <br>
+    <form action="/action">
+        <lebel for="username">Enter Your Username :</lebel>
+        <input type="text" id="username" placeholder="username">
+    </form>
+
+    <br><br> <br>
+    <form action="/action">
+        <div>
+            <level for="username">Enter Your Username :</level>
+            <input type="text" id="username" placeholder="username">
+        </div>
+        <div>
+            <level for="password">Enter Your Password :</level>
+            <input type="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
