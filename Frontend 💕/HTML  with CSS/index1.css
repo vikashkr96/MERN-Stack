@@ -1,0 +1,26 @@
+/* h1{
+    text-align: center;
+    text-decoration:line-through;
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+p{
+    font-weight: 800;
+    text-decoration: red underline;
+    line-height: 2.5;
+    font-size: 20px;
+    font-family: impact;
+    letter-spacing: 2px;
+} */
+
+h1{
+    font-family: league spartan;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight:900;
+    letter-spacing: 2px;
+    line-height:1.5;
+    text-decoration:teal double underline;
+    text-transform: uppercase;
+}
