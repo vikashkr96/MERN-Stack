@@ -1,0 +1,49 @@
+body {
+  font-family: Arial;
+}
+
+#mainImg {
+  width: 35%;
+}
+
+
+
+
+
+.green{
+  color: green;
+}
+.spacing{
+  letter-spacing: 10px;
+}
+.yellowBg{
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+.box {
+  border: 0.25px solid black;
+  width: 200px;
+  padding: 1rem;
+}
+
+.boxLink {
+  text-decoration: none;
+}
+
+.oldImg {
+  height: 200px;
+  width: 200px;
+  margin-right: 1rem;
+}
+
+#description {
+  background-color: antiquewhite;
+}
