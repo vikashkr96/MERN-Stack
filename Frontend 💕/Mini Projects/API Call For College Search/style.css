@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    padding: 25px 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input & button */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #667eea;
+}
+
+.search-box button {
+    padding: 10px 18px;
+    font-size: 16px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.search-box button:hover {
+    background: #5a67d8;
+    transform: scale(1.05);
+}
+
+/* College list */
+#list {
+    list-style: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f4f6ff;
+    border-left: 5px solid #667eea;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Scrollbar (optional, looks cool) */
+#list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#list::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
