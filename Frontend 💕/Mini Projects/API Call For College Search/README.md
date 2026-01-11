@@ -30,8 +30,3 @@ Built using **HTML, CSS, JavaScript, and Axios**.
 > Sample UI of the College Search App
 
 ![College Search App Demo](demo.png)
-
----
-
-## 📂 Project Structure
-
