@@ -1,0 +1,27 @@
+/* pseudo  class
+h1:hover{
+    background-color: red;
+}
+p:hover{
+    background-color: blue;
+}
+button:active{
+    background-color: rgb(241, 128, 241);
+}
+
+/* pseudo element */
+/* h1::first-letter{
+    background-color: green;
+} */ 
+
+div{
+    background-color: yellow;
+}
+form{
+    background-color: red;
+}
+input,button{
+    background-color: inherit;
+    /* opacity: 0; */
+}
+
