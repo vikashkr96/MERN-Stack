@@ -1,0 +1,21 @@
+/* Universal Selector */
+/* *{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+
+/* Element Selector  */
+
+/* h1{
+    background-color: red;
+} */
+
+/* Id selector */
+#login , #signup {
+    background-color: blue;
+}
+
+/* class secletor */
+.follow{
+    background-color: yellow;
+}
