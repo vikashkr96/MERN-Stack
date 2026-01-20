@@ -1,0 +1,68 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    text-align: center;
+
+    /* animation-name: fontAnimation; */
+    /* animation-name: colorAnimation; */
+    /* animation-name: widthAnimation; */
+    animation-name: multiAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    /* or (use short-hand) */
+    /* animation: widthAnimation 1s ease-in 0s infinite normal; */
+}
+
+
+@keyframes widthAnimation {
+    from{
+        width: 10px;
+        background-color: rgb(0, 255, 30);
+        border: radius 0%;;
+    }
+    to{
+        width: 900px;
+        background-color: rgb(255, 251, 0);
+        border-radius: 50%;
+    }
+}
+
+/* % showing multiple stages in animations */
+@keyframes multiAnimation{
+    0%{
+        width: 300px;
+        height: 200px;
+    }
+    50%{
+        width: 500px;
+        height: 500px;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
+
+
+@keyframes fontAnimation {
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 50px;
+    }
+}
+
+
+@keyframes colorAnimation {
+    from{
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
