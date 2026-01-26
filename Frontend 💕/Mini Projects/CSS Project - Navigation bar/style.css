@@ -36,6 +36,7 @@
     box-shadow: 0 0 6px rgba(255, 255, 255 , .5);
     height: 60px;
 }
+
 .sidebar_menu .logo a{
     position: absolute;
     color: white;
@@ -86,6 +87,7 @@
     opacity: .5;
     padding: 0 5px;
 }
+
 #check{
     display: none;
 }
@@ -93,9 +95,11 @@
 .sidebar_menu .menu li:hover{
     box-shadow: 0 0 6px rgba(255, 255, 255 , .5);
 }
+
 .btn_one:hover{
     font-size: 40px;
 }
+
 .btn_two:hover{
     font-size: 30px;
 }
@@ -108,9 +112,11 @@
 #check:checked ~ .sidebar_menu{       /* sibling selector used */
     left: 0;
 }
+
 #check:checked ~ .btn_one i{
     opacity: 0;
 }
+
 #check:checked ~ .sidebar_menu .btn_two i{
     opacity: 1;
 }
