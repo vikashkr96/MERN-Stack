@@ -11,7 +11,7 @@
 - Update or remove packages
 - Maintain project details using `package.json`
 
----
+-
 
 ## Important NPM Concepts
 
