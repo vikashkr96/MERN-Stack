@@ -31,6 +31,15 @@ REST is:
    - Data is exchanged using JSON (mostly)
 
 ---
+## Learning Outcome
+
+By building a Twitter-like app, we learn REST practically by:
+
+- Designing resources (posts, users)
+- Mapping CRUD operations to HTTP methods
+- Using RESTful routes
+- Understanding real-world API flow
+---
 
 ## 3. What is a RESTful API?
 A **RESTful API** is an API that follows REST principles.
@@ -41,16 +50,8 @@ GET /posts
 POST /posts
 PUT /posts/1
 DELETE /posts/1
-http```
 
 
-## Learning Outcome
 
-By building a Twitter-like app, we learn REST practically by:
-
-- Designing resources (posts, users)
-- Mapping CRUD operations to HTTP methods
-- Using RESTful routes
-- Understanding real-world API flow
 
 
