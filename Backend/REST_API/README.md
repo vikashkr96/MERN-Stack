@@ -41,13 +41,16 @@ GET /posts
 POST /posts
 PUT /posts/1
 DELETE /posts/1
-```
+http```
+
+
 ## Learning Outcome
 
-# By building a Twitter-like app, we learn REST practically by:
+By building a Twitter-like app, we learn REST practically by:
 
 - Designing resources (posts, users)
 - Mapping CRUD operations to HTTP methods
 - Using RESTful routes
 - Understanding real-world API flow
+
 
