@@ -1,1 +1,2 @@
-(instagram_database.png)
+![alt text](image-name.png)
+
