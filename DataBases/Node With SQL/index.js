@@ -8,26 +8,34 @@ const connection = mysql.createConnection({
     password : "1234"
 });
 
-connection.query("SHOW TABLES", (err, result) => {
+let getRandomUser = () => {
+  return [
+    faker.string.uuid(),
+    faker.internet.username(),
+    faker.internet.email(),
+    faker.internet.password(),
+  ];
+};
+
+let q = "INSERT INTO user (id , username , email , password) VALUES ?";
+let data = [];
+
+// insert in bulk ......
+for(let i = 1; i <=100 ; i++){
+  data.push(getRandomUser());
+};
+
+
+connection.query(q, [data] ,  (err, result) => {
     if (err) {
         console.error("DB Error:", err.message);
         return;
     }
     console.log(result);
 });
-
+ 
 connection.end();
 
-let getRandomUser = () => {
-  return {
-    userId: faker.string.uuid(),
-    username: faker.internet.username(),
-    email: faker.internet.email(),
-    password: faker.internet.password(),
-  };
-};
-
-// console.log(getRandomUser()); 
 
 
 
