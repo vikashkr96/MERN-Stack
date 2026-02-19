@@ -16,3 +16,7 @@ See proof of inserted records here:
 
 ### Conclusion
 Successfully learned how to sync Node.js with MongoDB using Mongoose and perform different types of data insertion operations.
+
+### ALSO:
+Many such operations like update , delete , find , replace as well as schema validations and rules is covered ..
+
