@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 main()
-.then(() =>{
+  .then(() => {
     console.log("Connection Successful");
-})
+  })
 
-.catch(err => console.log(err));
+  .catch(err => console.log(err));
 
 async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/test');
@@ -16,7 +16,7 @@ async function main() {
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
-  age:Number
+  age: Number
 });
 
 // now collection is ready!,  now how can we store documents in our collections ?
@@ -37,15 +37,15 @@ const User = mongoose.model("User", userSchema);
 
 // insert many
 
-User.insertMany([
-  {name:"vikash", email:"vk4845646@gmail.com", age:20},
-  {name:"rakesh", email:"rakeshkr1782@gmail.com", age:20},
-  {name:"amit", email:"amitkr1234@gmail.com", age:20}
-]).then((data)=>{
-  console.log(data);
-}).catch((err)=>{
-  console.log(err);
-});
+// User.insertMany([
+//   {name:"vikash", email:"vk4845646@gmail.com", age:20},
+//   {name:"rakesh", email:"rakeshkr1782@gmail.com", age:20},
+//   {name:"amit", email:"amitkr1234@gmail.com", age:20}
+// ]).then((data)=>{
+//   console.log(data);
+// }).catch((err)=>{
+//   console.log(err);
+// });
 
 // now checking it in the mongosh shell by running : db.users.find()   => no output
 
@@ -63,7 +63,55 @@ User.insertMany([
 // });  
 
 
+// // find operations ........
+// User.find({}).then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
 
+// User.find({age:{$gt:45}}).then((res) => {
+//   console.log(res);
+// }).catch((err) => {
+//   console.log(err);
+// });
 
+// update operations ....
+// User.updateOne({name:"vikash"} , {age: 21}).then((res)=>{
+//   console.log("updated");
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
 
+// User.find({}).then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });   // working successfully...
+
+// User.findOneAndUpdate({ name: "vikash" }, { age: 20 }, { new: true })
+//   .then((res) => {
+//     console.log(res);
+//   }).catch((err) => {
+//     console.log(err);
+//   });
+
+// delete methods 
+
+// User.deleteOne({name:"rakesh"}).then((res)=>{
+//   console.log("User deleted");
+// });
+
+// // delete many....
+// User.deleteMany({age:48}).then((res)=>{
+//   console.log("deleted");
+// });
+
+User.findOneAndDelete({name:"amit"}).then((res)=>{
+  console.log("The deleted document is: ")
+  console.log(res);
+});
+
+// Also we can use schema vlidations with these attributes.....like required , default
 
