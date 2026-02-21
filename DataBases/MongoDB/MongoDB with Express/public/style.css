@@ -1,0 +1,32 @@
+.chat{
+    background-color: rgb(90, 245, 245);
+    color: red;
+    padding: 13px;
+    
+}
+.msg{background-color:rgb(146, 249, 249) ;
+    color: red;
+    padding: 13px;
+    
+}
+.date{
+    background-color: rgb(181, 248, 248);
+    color: red;
+    padding: 13px;
+    
+}
+.main{
+    border-radius: 16px;
+}
+.button{
+    background-color: blue;
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.button:hover{
+    color: white;
+    border-radius: 50%;
+    transition-duration: 0.9s;
+}
