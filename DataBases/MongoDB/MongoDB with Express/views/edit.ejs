@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit message</title>
+</head>
+
+<body>
+    <h3>Edit Your Chat</h3>
+    <p>This Chat was sent from: <b>
+            <%= chat.from %>
+        </b></p>
+    <p>This Chat was recieved by: <b>
+            <%= chat.to %>
+        </b></p>
+    <p>Sent at: <b>
+            <%=chat.created_at.toString().split(" ")[4] %> </b>
+                </p>
+                <p>Date:<b> <%=chat.created_at.toString().split(" ").slice(0,4).join(" ") %></b>
+                </p>
+    <form action="/chats/<%=chat._id%>?_method=PUT" method="POST" >
+        <textarea name="msg" rows="6" cols="45">
+                <%=chat.msg%></textarea> <br><br>
+                    <button class="save" style="background-color: rgb(247, 18, 205);
+    height: 30px;
+    width: 50px;
+    border-radius: 50px;">Save</button>
+                    </form>
+</body>
+
+</html>

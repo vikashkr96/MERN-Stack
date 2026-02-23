@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Chats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>All Chats</h3>
+    <form method="GET" action="/chats/new">
+    <a href="http://localhost:8080/chats/new">
+    <button class="button">Start a new Chat</button>
+    </a>
+    </form>
+    <br>
+    <p><div class="main">
+        <%for(let chat of chats){ %>
+            <div class="chat">
+                <p>Sender: <%=chat.from%>
+                </p>
+                <p>Reciever: <%=chat.to%>
+                </p>
+            </div>
+            <div class="msg">
+                <p>message: <%=chat.msg%>
+                </p>
+                <form method="GET" action="/chats/<%=chat._id%>/edit">
+                    <button class="edit">Edit</button>
+                </form>
+                <br>
+                <form method="POST" action="/chats/<%=chat._id%>?_method=DELETE">
+                    <button class="delete">Delete</button>
+                </form>
+
+            </div>
+            <div class="date">
+                <p>Sent at: <%=chat.created_at.toString().split(" ")[4] %>
+                </p>
+                <p>Date: <%=chat.created_at.toString().split(" ").slice(0,4).join(" ") %>
+                </p>
+            </div>
+            <hr>
+            
+            <%}%>
+    </p>
+    </div>
+    <a href="http://localhost:8080/">
+        <button class="button">Go back to home page</button>
+    </a>
+
+</body>
+
+</html>
