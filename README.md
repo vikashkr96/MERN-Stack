@@ -94,7 +94,7 @@ npm start
 
 This repository is created while learning MERN Stack concepts from:
 
-* **Apna College** (YouTube & course material)
+* **Apna College** (course material)
 
 > All code is written by me for learning and practice purposes.
 
