@@ -1,0 +1,10 @@
+.Product {
+  border: 2px solid rgb(18, 239, 251);
+  color: rgb(0, 73, 182);
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(255, 252, 254);
+  text-align: center;
+  height: 120px;
+  width: 400px;
+}
