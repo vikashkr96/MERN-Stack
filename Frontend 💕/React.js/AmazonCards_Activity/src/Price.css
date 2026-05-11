@@ -1,0 +1,25 @@
+.new-price {
+  font-weight: bold;
+  color: #640de6;
+
+  text-shadow:
+    0 0 2px #4c3cf7,
+    0 0 4px #6518ff;
+
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 1.2px #3200e6;
+  }
+
+  to {
+    text-shadow:
+      0 0 1px #7024f4,
+      0 0 1px #7024f4;
+  }
+}
+
+.vk{ background-color: yellow; height: 30px;width: 220px; border-bottom-left-radius: 14px; border-bottom-right-radius: 14px; }
