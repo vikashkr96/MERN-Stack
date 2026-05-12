@@ -1,0 +1,84 @@
+.blue{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin-left: 175px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    color: white;
+   
+}
+.yellow{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: 175px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+   
+}
+.green{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    margin-left: 175px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    color: white;
+   
+}
+
+.red{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin-left: 175px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    color: white;
+}
+.t1{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    border: none;
+    background-color: blue;
+}
+.t2{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    border: none;
+    background-color: yellow;
+}
+.t3{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    border: none;
+    background-color: green;
+}
+.t4{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    border: none;
+    background-color: red;
+}
