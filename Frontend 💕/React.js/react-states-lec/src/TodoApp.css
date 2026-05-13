@@ -1,0 +1,41 @@
+.todo{
+    height: 600px;
+    width: 800px;
+}
+.input{
+    height: 25px;
+    width: 300px;
+    margin-left: 204px;
+    border: green ;
+}
+.button{
+    height:30px;
+}
+.task{
+    color: white;
+    background-color: rgb(110, 215, 250);
+    height: 400px;
+    width: 500px;
+    display: flex;
+    margin-left: 160px; 
+}
+.list{
+    margin-left: -145px;
+    margin-top: 40px;
+}
+
+.delete{
+    color: white;
+    opacity: 70%;
+}
+.delete:hover{
+    opacity: 100%;
+    color:red;
+}
+.check{
+    opacity: 70%;
+}
+.check:hover{
+    opacity: 100%;
+    color: green;
+}
